@@ -1,0 +1,1459 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/7%20%E6%97%A0%E7%A9%B7%E5%A4%A7%E5%92%8C%E6%97%A0%E7%A9%B7%E5%B0%8F/">
+      
+      
+        <link rel="next" href="../%E5%89%B2%E7%BA%BF/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>1 导数定义 - XueJie的考研数学2笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="XueJie的考研数学2笔记" class="md-header__button md-logo" aria-label="XueJie的考研数学2笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            XueJie的考研数学2笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1 导数定义
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="XueJie的考研数学2笔记" class="md-nav__button md-logo" aria-label="XueJie的考研数学2笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    XueJie的考研数学2笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XueJie 的考研数学 2 笔记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%9D%A1%E4%BB%B6%E5%8F%8D%E5%B0%84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    条件反射
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Features/LaTeX%20Math%20Support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeX Math Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Features/Mermaid%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mermaid diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Features/Text%20Formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text Formatting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数学
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            数学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    武忠祥0基础入门
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            武忠祥0基础入门
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_1" id="__nav_5_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    25基础高数习题
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            25基础高数习题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../25%E5%9F%BA%E7%A1%80%E9%AB%98%E6%95%B0%E4%B9%A0%E9%A2%98/1%20%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%9E%81%E9%99%90%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%81%E6%80%A7%E8%B4%A8%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%B0%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 第一章 极限的概念、性质与无穷小
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../25%E5%9F%BA%E7%A1%80%E9%AB%98%E6%95%B0%E4%B9%A0%E9%A2%98/2%20%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%9E%81%E9%99%90%E7%9A%84%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 第二章 极限的计算与函数的连续性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_2" id="__nav_5_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    第1章 函数与极限
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            第1章 函数与极限
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/4%20%E6%94%B6%E6%95%9B%E6%95%B0%E5%88%97%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 收敛数列的性质
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/4%20%E6%94%B6%E6%95%9B%E6%95%B0%E5%88%97%E7%9A%84%E6%80%A7%E8%B4%A8%EF%BC%88Deepseek%20%E4%BC%98%E5%8C%96%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 收敛数列的性质（Deepseek 优化）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/5%20%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 函数极限的定义
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/6%20%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 函数极限的性质
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/6%20%E6%9E%81%E9%99%90%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 极限总结
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AC%AC1%E7%AB%A0%20%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/7%20%E6%97%A0%E7%A9%B7%E5%A4%A7%E5%92%8C%E6%97%A0%E7%A9%B7%E5%B0%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 无穷大和无穷小
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3" id="__nav_5_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    第2章 导数与微分
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            第2章 导数与微分
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1 导数定义
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1 导数定义
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速直线运动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数切线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      导数的定义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="导数的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      左导数和右导数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见函数的导函数及其证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见函数的导函数及其证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      导函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见函数的导函数及证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见函数的导函数及证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%B2%E7%BA%BF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    割线
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    方法论（如何系列）
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            方法论（如何系列）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%96%B9%E6%B3%95%E8%AE%BA%EF%BC%88%E5%A6%82%E4%BD%95%E7%B3%BB%E5%88%97%EF%BC%89/%E5%A6%82%E4%BD%95%E5%81%9A%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何做时间管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%96%B9%E6%B3%95%E8%AE%BA%EF%BC%88%E5%A6%82%E4%BD%95%E7%B3%BB%E5%88%97%EF%BC%89/%E6%B1%82%E6%9E%81%E9%99%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    求极限
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速直线运动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数切线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      导数的定义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="导数的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      左导数和右导数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见函数的导函数及其证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见函数的导函数及其证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      导函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见函数的导函数及证明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见函数的导函数及证明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      证明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>1 导数定义</h1>
+
+<h2 id="_1">引子<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">变速直线运动<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>先从最简单的匀速直线运动说起。</p>
+<p>其平均速率为总路程和时间之比，每一刻的速率都等于平均速率。</p>
+<p>再考虑变速直线运动。</p>
+<p>其平均速率仍为总路程和时间之比，但每一刻的速率不一定等于平均速率。</p>
+<p>如果要算出运动时 <span class="arithmatex">\(t_{0}\)</span> 时刻的瞬时速率，可以用从 <span class="arithmatex">\(t_{0}\)</span> 到 <span class="arithmatex">\(t_{0}+\Delta t\)</span> 的平均速率来近似，其中 <span class="arithmatex">\(\Delta t\)</span> 非常小。</p>
+<p>设位置关于时间的函数 <span class="arithmatex">\(x=f(t)\)</span>，可以列出平均速率的计算公式：</p>
+<div class="arithmatex">\[
+v_{0}\approx \overline{v_{0}}=\frac{f(t_{0}+\Delta t)-f(t_{0})}{t_{0}+\Delta t-t_{0}}=\frac{f(t_{0}+\Delta t)-f(t_{0})}{\Delta t}
+\]</div>
+<p>我们已经学习了极限概念，可以让 <span class="arithmatex">\(\Delta t\to 0\)</span>，对上面的式子求极限，这样上面的式子就等于 <span class="arithmatex">\(t_{0}\)</span> 时刻的瞬时速率了。</p>
+<div class="arithmatex">\[
+v_{0}=\lim_{ \Delta t \to 0 } \frac{f(t_{0}+\Delta t)-f(t_{0})}{\Delta t}
+\]</div>
+<h3 id="_3">函数切线<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>有一个连续函数 <span class="arithmatex">\(f(x)\)</span>，求它的一个点 <span class="arithmatex">\((x_{0},f(x_{0}))\)</span> 的切线的斜率。</p>
+<p>切线的定义是：</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%88%87%E7%BA%BF">Wikipedia</a>: 设L为一条曲线，A, B为此曲线上的点，过此二点作曲线的割线，令B趋向A，如果割线的极限存在，则称此极限（一条直线）为曲线在A的切线。<br />
+图见<a href="../%E5%89%B2%E7%BA%BF/">割线</a><br />
+<img alt="割线img.png" src="../%E5%89%B2%E7%BA%BFimg.png" /></p>
+<p>先列出求割线斜率的式子：</p>
+<p>$$<br />
+k_{\text{割线}}=\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}<br />
+$$<br />
+再对它取极限就是切线的斜率：</p>
+<div class="arithmatex">\[
+\lim_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+\]</div>
+<h2 id="_4">导数的定义<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>若对于函数 <span class="arithmatex">\(y=f(x)\)</span>，</p>
+<div class="arithmatex">\[
+\lim_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+\]</div>
+<p>存在，则称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处可导，上式为<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处的导数，记为<span class="arithmatex">\(f'(x_0)=y'|_{x=x_0}=\frac{\mathrm{d}y}{\mathrm{d}x}\)</span>。<br />
+如果上式对于函数<span class="arithmatex">\(f(x)\)</span>不存在，那么称<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\(x_0\)</span>处不可导。如果上式等于无穷，那么称<span class="arithmatex">\(f(x)\)</span>的导数为无穷，是不可导的一种情况。</p>
+<h3 id="_5">左导数和右导数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>左导数：</p>
+<div class="arithmatex">\[
+f_{-}'(x_{0})=\lim_{ \Delta x \to 0^- } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\lim_{ x \to x_{0}^{-} }\frac{f(x)-f(x_{0})}{x-x_{0}} 
+\]</div>
+<p>右导数：</p>
+<div class="arithmatex">\[
+f_{+}'(x_{0})=\lim_{ \Delta x \to 0^+ } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\lim_{ x \to x_{0}^{+} }\frac{f(x)-f(x_{0})}{x-x_{0}} 
+\]</div>
+<div class="arithmatex">\[
+\boxed{可导 \Leftrightarrow 左右导数存在且相等}
+\]</div>
+<p>即：</p>
+<div class="arithmatex">\[
+\exists\lim_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x} \Leftrightarrow \exists\lim_{ \Delta x \to 0^- } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x} \cap \exists \lim_{ \Delta x \to 0^+ } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}\cap \lim_{ \Delta x \to 0^- } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x} = \lim_{ \Delta x \to 0^+ } \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}
+\]</div>
+<p>区间上可导：<br />
+如果函数 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\(x\in (a,b)\)</span> 上的<strong>每一个点</strong>都可导，那么称 <span class="arithmatex">\(f(x)\)</span> 在区间 <span class="arithmatex">\((a,b)\)</span> 上可导。</p>
+<h3 id="_6">常见函数的导函数及其证明<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="_7">导函数<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>如果函数 <span class="arithmatex">\(y=f(x)\)</span> 在其定义域内可导，那么它的导函数：</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}y}{\mathrm{d}x}=f'(x)=\lim_{ \Delta x \to 0 }\frac{f(x+\Delta x)-f(x)}{\Delta x}
+\]</div>
+<h4 id="_8">常见函数的导函数及证明<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>常数：<span class="arithmatex">\(a'=0,a\in \mathbb{R}\)</span><br />
+幂函数</p>
+<p>$$<br />
+(x^\alpha)'=\alpha x^{\alpha-1}\space (x&gt;0)<br />
+$$<br />
+指数函数</p>
+<p>$$<br />
+(a <sup>x)'=a</sup>x\ln a \space (a&gt;0,a\ne 1)<br />
+$$<br />
+对数函数</p>
+<p>$$<br />
+(\log_{a}x)'=\frac{1}{x\ln a} \space (a&gt;0,a\ne 1)<br />
+$$<br />
+三角函数</p>
+<div class="arithmatex">\[
+(\sin x)'=\cos x
+\]</div>
+<div class="arithmatex">\[
+(\cos x)'=-\sin x
+\]</div>
+<div class="arithmatex">\[
+(\tan x)'=1+\frac{1}{\tan^2 x}
+\]</div>
+<div class="arithmatex">\[
+(\csc x)'=-\cot x\cdot \csc x
+\]</div>
+<div class="arithmatex">\[
+(\sec x)'=\sec x \cdot \tan x
+\]</div>
+<div class="arithmatex">\[
+(\cot x)'=-\frac{1}{\sin^2 x}
+\]</div>
+<h5 id="_9">证明<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<p>幂函数<br />
+<span class="arithmatex">\((x^\alpha)'=\lim_{ \Delta x \to 0 }\frac{(x+\Delta x)^\alpha-x^\alpha}{\Delta x}=\lim_{ \Delta x \to 0 }\frac{x^\alpha \left[ \left( 1+\frac{\Delta x}{x} \right)^\alpha - 1 \right]}{\Delta x}\)</span><br />
+<span class="arithmatex">\(\Delta x\to 0\)</span> 时， <span class="arithmatex">\(\frac{\Delta x}{x}\to 0\)</span>，根据等价无穷小代换，<span class="arithmatex">\(\left( 1+\frac{\Delta x}{x} \right)^\alpha - 1\sim \frac{\alpha \Delta x}{x}\)</span><br />
+可得 <span class="arithmatex">\(\text{原式}=\lim_{ \Delta x \to 0 }\frac{x^\alpha \cdot \alpha \Delta x}{\Delta x \cdot x}=\lim_{ \Delta x \to 0 }\alpha x^{\alpha-1}\)</span><br />
+所以 <span class="arithmatex">\((x^\alpha)'=\alpha x^{\alpha-1}\)</span><br />
+指数函数<br />
+<span class="arithmatex">\((a^x)'=\lim_{ \Delta x \to 0 }\frac{a^{x+\Delta x}-a^x}{\Delta x}=\lim_{ \Delta x \to 0 }\frac{a^x(a^{\Delta x}-1)}{\Delta x}\)</span><br />
+因为 <span class="arithmatex">\(\lim_{ x \to 0 }\frac{a^x-1}{x}=\ln a,a&gt;0\)</span><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><br />
+所以 <span class="arithmatex">\(\text{原式}=\lim_{ \Delta x \to 0 }(a^x \cdot \ln a)=a^x \cdot \ln a\)</span></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>此结论可以由导数的定义、泰勒展开、变量替换等方式得到。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
